@@ -3,6 +3,6 @@
 
 
 
-[![Practica 1 Básica](CodeAppLab.png)](practica1/README.md)
+[![Practica 1 Básica](CodeAppLab.png)](Practica1/README.md)
 
 
