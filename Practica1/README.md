@@ -1,8 +1,7 @@
+# PRACTICA 1
 Esta practica es básica pues organiza un diseño de interface (UI), hay botones de acción, áreas de texto y despligue con propiedades de ocultar
 
-
-# DISEÑO DEL UI (USER INTERFACE O INTERFAZ DEL USUARIO)
-## 
+## DISEÑO DEL UI (USER INTERFACE O INTERFAZ DEL USUARIO)
 
 Acomodamos los elementos y ponemos las propiedades de manera general sin preocuparnos de colores o tipos de letra; una vez que funcione su App, ya tendrá tiempo para acondicionarla darle belleza en todos los aspectos.
 
@@ -20,6 +19,14 @@ txtCorreoElectronico, intEdad, intWhatzap; cabe hacer notar que iniciamos con mi
 Los botones tiene nombre que inician con 3 letras "btn", como btnBorrar, btnCalcular, etc.
 Todos los botones pueden tener acciones a sus eventos, ahi es donde ponermos el codigo de la sección que le corresponde.
 
+![](practica1-parte3a.png)
+
+Para saltar a modo programa código es necesario seleccionarlo del lado izquierdo como muestra la imagen, es posible ver modo bloque o texto programa.
+
+
+![](practica1-parte3b.png)
+
+Modo texto programa estamos trabajando con fundamentos de **javascript**, recuerde que cada comando trae sus ejemplos para revisar las condiciones de como se debe aplicar y sus restricciones.
 
 ![](practica1-parte4.png)
 Es una propiedad que esta OCULTA y esta manualmente se aparece si hay algo que decirle al usuario de la APP, de lo contrario aparece escondido.
