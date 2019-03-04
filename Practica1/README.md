@@ -15,6 +15,10 @@ Son los bloques que estaremos usando
 Definimos con las iniciales "txt" pues es recibiá un texto capturado, de ser  numero iniciamos con "int" (num integro entero):
 txtCorreoElectronico, intEdad, intWhatzap; cabe hacer notar que iniciamos con minusculas y por cada composición ponemos una mayúsculas; se donomina CamelCase (como Camello)*
 
+![](practica1-parte2.png)
+
+Los botones tiene nombre que inician con 3 letras "btn", como btnBorrar, btnCalcular, etc.
+Todos los botones pueden tener acciones a sus eventos, ahi es donde ponermos el codigo de la sección que le corresponde.
 
 
 ![](practica1-parte4.png)
