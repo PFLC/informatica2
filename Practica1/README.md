@@ -89,4 +89,9 @@ UpperCamelCase, cuando la primera letra de cada una de las palabras es mayúscul
 
 # CORRIDA DEL PROGRAMA
 
-<iframe width="352" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/JzY9bI9AuWAlsRP9j58WvD80quUn-MOE3ckFNL0DBnH/embed?nosource"></iframe>
+https://studio.code.org/projects/applab/JzY9bI9AuWAlsRP9j58WvD80quUn-MOE3ckFNL0DBnH
+
+o. https://is.gd/v5Gxis
+
+![](QRPractica1.png)
+
