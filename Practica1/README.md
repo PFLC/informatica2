@@ -86,3 +86,7 @@ Existen dos tipos de CamelCase:
 
 **lowerCamelCase, igual que la anterior con la excepción de que la primera letra es minúscula. Ejemplo: ejemploDeLowerCamelCase.**
 UpperCamelCase, cuando la primera letra de cada una de las palabras es mayúscula. Ejemplo: EjemploDeUpperCamelCase.
+
+# CORRIDA DEL PROGRAMA
+
+<iframe width="352" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/JzY9bI9AuWAlsRP9j58WvD80quUn-MOE3ckFNL0DBnH/embed?nosource"></iframe>
