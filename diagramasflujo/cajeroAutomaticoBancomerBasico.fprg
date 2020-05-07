@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rene"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-05-07 08:31:52 AM"/>
+        <attribute name="created" value="cmVuZTtSRU5FUkVZRVM5QUFCOzIwMjAtMDUtMDY7MTI6MTU6MDggQU07MjYzMA=="/>
+        <attribute name="edited" value="cmVuZTtSRU5FUkVZRVM5QUFCOzIwMjAtMDUtMDc7MDg6MzE6NTIgQU07MTsyNzQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Cajero Autom&#225;tico Simple&#13;&#10;Por: Rene Solis&#13;&#10;Inform&#225;tica 2 Mayo 2020"/>
+            <declare name="saldo" type="Integer" array="False" size=""/>
+            <declare name="deposito" type="Integer" array="False" size=""/>
+            <declare name="retiro" type="Integer" array="False" size=""/>
+            <declare name="opcion" type="Integer" array="False" size=""/>
+            <declare name="pin" type="Integer" array="False" size=""/>
+            <declare name="pinSecreto" type="Integer" array="False" size=""/>
+            <declare name="k" type="Integer" array="False" size=""/>
+            <declare name="transaccion" type="String" array="False" size=""/>
+            <declare name="EXIT" type="Boolean" array="False" size=""/>
+            <assign variable="saldo" expression="1000"/>
+            <assign variable="pin" expression="0"/>
+            <assign variable="transaccion" expression="&quot;y&quot;"/>
+            <assign variable="EXIT" expression="FALSE"/>
+            <output expression="&quot;Bancomer Cajero Autom&#225;tico, Poner su Tarjeta de D&#233;bito ATM&quot;" newline="True"/>
+            <call expression="esperar(&quot;Por espere&quot;, 1000)"/>
+            <assign variable="pinSecreto" expression="12345"/>
+            <comment text="Pin Secreto 123456"/>
+            <while expression="pin &lt;&gt; pinSecreto">
+                <output expression="&quot;Favor de teclear su PIN: &quot;" newline="True"/>
+                <input variable="pin"/>
+                <call expression="esperar(&quot;Atendiendo permitame un momento&quot;, 10000)"/>
+                <if expression="pin &lt;&gt; pinSecreto">
+                    <then>
+                        <output expression="&quot;Pin invalido, poner el PIN: &quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <comment text="Seccion Menu"/>
+            <do expression="EXIT = False">
+                <call expression="menu()"/>
+                <input variable="opcion"/>
+                <if expression="opcion = 1">
+                    <then>
+                        <comment text="Saldo"/>
+                        <output expression="&quot;Su saldo es: &quot; &amp; saldo" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="opcion = 2">
+                    <then>
+                        <comment text="Retirar PENDIENTE"/>
+                        <output expression="&quot;Cantidad a Retirar&quot;" newline="True"/>
+                        <input variable="retiro"/>
+                        <if expression="retiro % 100 &lt;&gt; 0">
+                            <then>
+                                <output expression="&quot;Solo puede retirar multiplos de 100 pesos&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="retiro &gt; (saldo - 500)">
+                                    <then>
+                                        <output expression="&quot;Saldo Insuficiente&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <assign variable="saldo" expression="saldo - retiro"/>
+                                        <output expression="&quot;Retire el efectivo de la caja&quot;" newline="True"/>
+                                        <call expression="esperar(&quot;Un momento, estamos atendiendo&quot;, 1000)"/>
+                                        <output expression="&quot;Su saldo es de: &quot; &amp; saldo" newline="True"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="opcion = 3">
+                    <then>
+                        <comment text="Dep&#243;sitos"/>
+                        <output expression="&quot;Cantidad a depositar&quot;" newline="True"/>
+                        <input variable="deposito"/>
+                        <assign variable="saldo" expression="saldo + deposito"/>
+                        <call expression="esperar(&quot;Procesando su solicitud&quot;, 10000)"/>
+                        <output expression="&quot;Su saldo es de: &quot; &amp; saldo" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="opcion = 4">
+                    <then>
+                        <comment text="Salir"/>
+                        <output expression="&quot;Continuar con otra transacci&#243;n? &quot;" newline="True"/>
+                        <input variable="transaccion"/>
+                        <if expression="(transaccion = &quot;n&quot; OR transaccion = &quot;N&quot;)">
+                            <then>
+                                <output expression="&quot;Retire su tarjeta de d&#233;bito&quot;" newline="True"/>
+                                <call expression="esperar(&quot;blip...blip...blip&quot;, 1000)"/>
+                                <output expression="&quot;Gracias por su preferencia, BBVA&quot;" newline="True"/>
+                                <assign variable="EXIT" expression="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+        </body>
+    </function>
+    <function name="esperar" type="None" variable="">
+        <parameters>
+            <parameter name="mensaje" type="String" array="False"/>
+            <parameter name="cuantoEsperar" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <comment text="Esperar tiempo en el cajero, trae un mensaje y el tiempo el mseg"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="mensaje" newline="True"/>
+            <for variable="i" start="1" end="cuantoEsperar" direction="inc" step="1"/>
+        </body>
+    </function>
+    <function name="menu" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Menu"/>
+            <output expression="&quot;******Bienvenido a cajero BBVA******&quot;" newline="True"/>
+            <output expression="&quot;1. Checar Saldo&quot;" newline="True"/>
+            <output expression="&quot;2. Retirar&quot;" newline="True"/>
+            <output expression="&quot;3. Dep&#243;sitar&quot;" newline="True"/>
+            <output expression="&quot;4. Salir&quot;" newline="True"/>
+            <output expression="&quot;*************************&quot;" newline="True"/>
+            <output expression="&quot;Deme su opci&#243;n: &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
