@@ -44,3 +44,7 @@ It showed some errors about freetype fonts so I installed them with macports and
 After fixing freetype fonts problem I was able to run notepad++
 Also you might want to run: sudo spctl --master-disable to disable gatekeeper if you will see some system alerts about loading app from unknown developer.
 Also note that instead of ./wine start you can run ./wine explorer for graphical file manager instead of console
+
+
+
+REFERENCIAS: https://mybyways.com/blog/compiling-wine-from-scratch-on-macos-with-retina-mode
