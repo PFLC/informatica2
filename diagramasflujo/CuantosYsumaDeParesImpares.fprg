@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rene"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-05-07 08:38:16 AM"/>
+        <attribute name="created" value="cmVuZTtSRU5FUkVZRVM5QUFCOzIwMjAtMDUtMDQ7MDg6MDE6MTEgQU07MjYyMg=="/>
+        <attribute name="edited" value="cmVuZTtSRU5FUkVZRVM5QUFCOzIwMjAtMDUtMDc7MDg6Mzg6MTYgQU07MjsyNzQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Del rango de 9 a 43000, cuantos son impares y pares, con su respectiva sumas"/>
+            <declare name="n, pares, impares, cuantosPares, cuantosImpares" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="0"/>
+            <assign variable="pares" expression="0"/>
+            <assign variable="cuantosImpares" expression="0"/>
+            <assign variable="cuantosPares" expression="0"/>
+            <assign variable="impares" expression="0"/>
+            <output expression="&quot;Despliega del 9 al 43000, determina son numero pares (Recuerda que no tiene residuo y el simbolo es %)&quot;" newline="True"/>
+            <output expression="&quot;Deerminar la suma de la pares y de los impares&quot;" newline="True"/>
+            <for variable="n" start="1" end="43000" direction="inc" step="1">
+                <if expression="n % 2 = 0">
+                    <then>
+                        <assign variable="pares" expression="pares + n"/>
+                        <assign variable="cuantosPares" expression="cuantosPares + 1"/>
+                    </then>
+                    <else>
+                        <assign variable="impares" expression="impares + n"/>
+                        <assign variable="cuantosImpares" expression="cuantosImpares+ 1"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Se calcul&#243; que la suma de los pares son: &quot; &amp; pares &amp; &quot; del total de &quot; &amp; cuantosPares" newline="True"/>
+            <output expression="&quot;Y suma de los impares son: &quot; &amp; impares &amp; &quot; del total de &quot; &amp; cuantosImpares" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
