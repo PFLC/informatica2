@@ -1,17 +1,17 @@
 # Instalando Flowgorithm en la MAC (versión Catalina 2020)
 
 # PREPARACIÓN DE DEPENDIENCIAS GENERALES "FREETYPE"
-
+```
 $ curl -L http://download.savannah.gnu.org/releases/freetype/freetype-2.7.tar.gz -o freetype-2.7.tar.gz
 $ tar xf freetype-2.7.tar.gz
 $ cd freetype-2.7
 $ ./configure --prefix=$TARGET/usr
 $ make install
 $ cd ..
-
+```
 
 # PREPARACIÓN DE HomeBrew GRATIS (https://brew.sh/index_es)
-
+```
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 $ brew unlink bison
@@ -24,7 +24,7 @@ $ export LDFLAGS="-L/usr/local/opt/bison/lib"
 $ source ~/.bash_profile
 $ bison -V
 (MENSAJE)  bison (GNU Bison) 3.x
-
+```
 # INSTALACION
 I was able to build Wine 64 bit from source on macOS Catalina and successfully run Notepad++ 64 bit on it.
 
