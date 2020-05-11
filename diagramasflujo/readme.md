@@ -3,10 +3,10 @@
 En el mundo de hoy, una computadora se usa para resolver varios tipos de problemasporque lleva mucho menos tiempo en comparación con un ser humano. El seguimientoLos pasos se realizan mientras se resuelve un problema:
 
 1. Analiza el problema dado.
-2. Divida el proceso utilizado para resolver el problema en una serie deTareas.
+2. Divida el proceso utilizado para resolver el problema en una serie de Tareas.
 3. Formule el algoritmo para resolver el problema.
 4. Exprese el algoritmo como una notación precisa, que se conoce como un programa de computadora.
-5. Alimente el programa de computadora en la computadora. La CPU interpreta el programa dado, procesa los datosen consecuencia, y genera el resultado.6. Envíe el resultado generado a la unidad de salida, que lo muestra.Los algoritmos y los diagramas de flujo son dos técnicas importantes que ayudan a los usuarios a resolver problemas orealizar tareas usando una computadora.
+5. Alimente el programa de computadora en la computadora. La CPU interpreta el programa dado, procesa los datosen consecuencia, y genera el resultado.6. Envíe el resultado generado a la unidad de salida, que lo muestra.Los algoritmos y los diagramas de flujo son dos técnicas importantes que ayudan a los usuarios a resolver problemas o realizar tareas usando una computadora.
 
 Un algoritmo es un método paso a paso completo, detallado y preciso para resolver un problema de forma independientedel software o hardware de la computadora. Los algoritmos son muy esenciales, ya que instruyen a la computadoraqué pasos específicos debe realizar para llevar a cabo una tarea en particular o para resolver un problema. Comprendercómo funciona un algoritmo.
 
@@ -14,6 +14,7 @@ _El enfoque de arriba hacia abajo de un algoritmo para resolver un problema dado
 
 
 ## CONCATENACION
+
 Una cadena es una secuencia de caracteres que se trata como un único elemento de datos. Hemos utilizado cadenas en variasejemplos en el pasado. Cualquier grupo de caracteres (excepto el signo de comillas dobles) definido entre comillas doblesmarcas es una constante de cadena. Al usar el símbolo & permite unir cadeanas de texto con variables, recordemos agregar espacio para que se separen los resultados. "Nombre es " & nombreAutor
 
 
