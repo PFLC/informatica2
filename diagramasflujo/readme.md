@@ -32,11 +32,31 @@ Una matriz es una colección secuenciada de elementos de tamaño fijo del mismo 
 La capacidad de usar un solo nombre para representar una colección de artículos y para referirse a un artículo especificando el número de artículo nos permite desarrollar programas concisos y eficientes. Por ejemplo, podemos usar una construcción de bucle, con el subíndice como la variable de control para leer toda la matriz, realizar cálculos yimprime los resultados.
 Podemos usar matrices para representar no solo listas simples de valores sino también tablas de datos en dos, tres o más dimensiones. 
 Lostipos de matrices
-- Matrices unidimensionales
+- Matrices unidimensionales, *para efecto de este curso veremos solo esta sección*
 - Matrices bidimensionales
 - Matrices multidimensionales
 
 
-# Trabajando con Flowgorithm
+# Trabajando con Flowgorithm con matrices Unidemensionales 
 
 ![](https://pbs.twimg.com/profile_images/905575120705486848/ZburZtMW_400x400.jpg)
+
+Matrices unidimensionales, una lista de elementos se le puede dar un nombre de variable usando solo un subíndice y tal una variable se denomina variable de subíndice único o matriz unidimensional.
+
+Por ejemplo, si queremos representar un conjunto de cinco números, digamos (35, 40, 20, 57, 19), por una matriz número variable, entonces podemos declarar el número variable de la siguiente maneraint número [5];y la computadora reserva cinco ubicaciones de almacenamiento como se muestra a continuación: 
+
+ Programación para la resolución de problemas número 
+ ```
+numero = [10]   // es la forma de declarar un "array" o arreglo unidimensional sencillo.
+ 
+ Los valores de los elementos de la matriz se pueden asignar de la siguiente ejemplo:
+ numero[0] = 35;
+ numero[1] = 40;
+ numero[2] = 20;
+ numero[3] = 57;
+ numero[4] = 19; 
+ 
+ // notece que 0 es la primera posición, para el efecto del ciclo o bucle, son reglas de programación.
+ 
+  ```
+ 
