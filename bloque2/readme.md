@@ -26,23 +26,24 @@ Volveremos a usar de ejemplo el siguiente problema:
 Se debe calcular el área y el perímetro de un terreno rectangular.
 El algoritmo quedó de la sig. forma:
 
-   1.-Inicio
-   2.-Solicitar base y altura
-   3.-Leer base y altura
-   4.-Calcular area=base*altura
-   5.-Calcular perimetro=(base+altura)*2
-   6.-Imprimir "El área del terreno es:" área
-   7.-Imprimir "El perímetro es: " perimetro
-   8.-Fin
+1. Inicio
+2. Solicitar base y altura
+3. Leer base y altura
+4. Calcular area=base*altura
+5. Calcular perimetro=(base+altura)*2
+6. Imprimir "El área del terreno es:" área
+7. Imprimir "El perímetro es: " perimetro
+8. Fin
    
    !´+
  
- declaramos 4 variables, una para base, altura, area, perimetro, un consejo que te doy es que declares los variables con nombres cortos incluso puedes nombrarlas con solo una letra si asi lo queres.
-agregamos output e input de la siguiente forma , esto para que al preguntar la base se almacene en su variable y con la altura también.
-Calculamos el área, para esto le asignamos una expresión a la variable x para que pueda calcularla, recuerda que debemos escribir toda expresión de forma lineal (como una ecuación).
-Hacemos lo mismo con la variable w (perímetro)
-Ahora que ya tenemos los resultados, debemos mostrarlos al usuario, para esto usaremos el output, escribimos "El área es: " en comillas porque es una serie de caracteres, seguido de &x, necesitamos el amperson pàra indicar que el mensaje mostrará una variable. podemos mostrar también el perímetro en el mismo mensaje, solo debemos respetar la nomenclatura ("El perímetro es: "&w).
-Listo, terminamos el diagrama, lo bueno de Flowgorithm es que puedes ejecutarlo para verificar que funcione correctamente, así que lo probaremos para verificarlo.
+## PASOS 
+1. Declaramos 4 variables, una para base, altura, area, perimetro, un consejo que te doy es que declares los variables con nombres cortos incluso puedes nombrarlas  con solo una letra si asi lo queres.
+2. Agregamos output e input de la siguiente forma , esto para que al preguntar la base se almacene en su variable y con la altura también.
+3. Calculamos el área, para esto le asignamos una expresión a la variable x para que pueda calcularla, recuerda que debemos escribir toda expresión de forma lineal (como una ecuación).
+4. Hacemos lo mismo con la variable w (perímetro)
+5. Ahora que ya tenemos los resultados, debemos mostrarlos al usuario, para esto usaremos el output, escribimos "El área es: " en comillas porque es una serie de caracteres, seguido de &x, necesitamos el amperson pàra indicar que el mensaje mostrará una variable. podemos mostrar también el perímetro en el mismo mensaje, solo debemos respetar la nomenclatura ("El perímetro es: "&w).
+6. Listo, terminamos el diagrama, lo bueno de Flowgorithm es que puedes ejecutarlo para verificar que funcione correctamente, así que lo probaremos para verificarlo.
 
 
 Bibliografía:
